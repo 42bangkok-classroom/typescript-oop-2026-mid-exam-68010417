@@ -1,10 +1,6 @@
 // Write your code below
 let score: number = Number(process.argv[2]);
 
-if (process.argv[2] === "") {
-    console.log('Invalid input');
-}
-
 if(Number.isNaN(score) || score < 0 || score > 100){
   console.log('Invalid input');
 }else if(score < 0 || score > 100){
