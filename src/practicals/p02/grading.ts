@@ -3,7 +3,6 @@ let score: number = Number(process.argv[2]);
 
 if (process.argv[2] === "") {
     console.log('Invalid input');
-    process.exit();
 }
 
 if(Number.isNaN(score) || score < 0 || score > 100){

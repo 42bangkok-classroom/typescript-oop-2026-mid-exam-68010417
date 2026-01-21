@@ -4,7 +4,7 @@ let input = +process.argv[2];
 if (Number.isNaN(input) || input <= 0 || !Number.isInteger(input) || process.argv[2] === "") {
     
 }else{
-for (let i = 1; i <= input; i++){
+for (let i:number = 1; i <= input; i++){
   if (i % 5 === 0 && i % 3 === 0){
     console.log('FizzBuzz');
   }else if (i % 3 === 0){
@@ -12,7 +12,7 @@ for (let i = 1; i <= input; i++){
   }else if (i % 5 === 0){
     console.log('Buzz');
   }else if (!(i % 3 === 0 || i % 5 === 0)){
-    console.log(`${i}`);
+    console.log(i);
   }
 }
 }
