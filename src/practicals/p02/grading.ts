@@ -2,14 +2,14 @@
 let score: number = Number(process.argv[2]);
 
 if (process.argv[2] === "") {
-    console.log('Invalid Input');
+    console.log('Invalid input');
     process.exit();
 }
 
 if(Number.isNaN(score) || score < 0 || score > 100){
-  console.log('Invalid Input');
+  console.log('Invalid input');
 }else if(score < 0 || score > 100){
-  console.log('Invalid Input');
+  console.log('Invalid input');
 }else if(score >= 80){
   console.log('Grade is A');
 }else if(score >= 70){
